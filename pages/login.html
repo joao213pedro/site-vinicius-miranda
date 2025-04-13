@@ -1,0 +1,30 @@
+<!-- pages/login.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="/assets/img/logo.png" alt="Logo Vinícius Miranda" class="logo" />
+    <h2>Entrar no Sistema</h2>
+    <form id="formLogin">
+      <input type="email" placeholder="E-mail" required><br><br>
+      <input type="password" placeholder="Senha" required><br><br>
+      <button type="submit" class="btn">Entrar</button>
+    </form>
+    <p style="margin-top: 15px;">
+      <a href="cadastro.html" style="color: #00c853;">Criar uma conta</a>
+    </p>
+  </div>
+  <script>
+    document.getElementById("formLogin").addEventListener("submit", function(e) {
+      e.preventDefault(); // evita o recarregamento
+      window.location.href = "dashboard.html"; // redireciona após "login"
+    });
+  </script>  
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<!-- pages/agendamentos.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agendamento de Treinos</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="/assets/img/logo.png" alt="Logo Vinícius Miranda" class="logo" />
+    <h2>Agendamento de Treinos</h2>
+
+    <form id="formTreino">
+      <input type="text" id="aluno" placeholder="Nome do aluno" required><br>
+      <input type="date" id="data" required><br>
+      <input type="time" id="hora" required><br>
+      <input type="text" id="tipo" placeholder="Tipo de treino (ex: perna, cardio...)" required><br>
+      <button type="submit" class="btn">Agendar Treino</button>
+    </form>
+
+    <h3>Treinos Agendados</h3>
+    <table id="tabelaTreinos">
+      <thead>
+        <tr>
+          <th>Aluno</th>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <a href="dashboard.html" class="btn-sair" style="margin-top: 30px;">Voltar ao Painel</a>
+  </div>
+
+  <script src="../assets/js/agendamentos.js"></script>
+</body>
+</html>
+

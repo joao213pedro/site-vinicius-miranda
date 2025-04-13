@@ -1,0 +1,12 @@
+[
+  {
+    "nome": "João Teste",
+    "idade": 22,
+    "plano": "mensal"
+  },
+  {
+    "nome": "João Pedro",
+    "idade": 24,
+    "plano": "mensal"
+  }
+]
